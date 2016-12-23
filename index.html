@@ -1,1 +1,55 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email Response Time</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <script src = "http://d3js.org/d3.v3.min.js" charset="utf-8" type="text/javascript"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div id = "title">
+            <h1>Enrico's Email Response Time Analysis</h1>
+        </div>
+        <div class = "subtitle">
+            <h2>Average Response Time Scatter Plot</h2>
+        </div>
+        <div>
+                <svg id = "scatterplot">
+                    <image x = "950" y="50" width="250px" height="250px" xlink:href="demopic/legend.png">
+                    </image>
+                </svg>
+        </div>
+
+        <div id = "tooltip">Tooltip</div>
+
+        <div class = "subtitle">
+            <h2>Response Time Distribution</h2>
+        </div>
+
+        <div id = "button"></div>
+
+        <div id = "brush"></div>
+
+        <div class="row">
+            <div id="violin-container" class="col-md-10">
+            </div>
+            <div class="col-md-2">
+                <form>
+                      <fieldset>
+                        <ul class="legend">
+                            <li><span class="receive"></span> Receive</li>
+                            <li><span class="reply"></span> Reply</li>
+                        </ul>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="js/main.js"></script>
+</html>

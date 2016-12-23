@@ -1,0 +1,171 @@
+<style type="text/css">
+
+    body {
+        font: 300 13px "Helvetica Neue", Helvetica;
+    }
+
+    h1 {
+        margin : 0
+    }
+
+    circle {
+        opacity: 0.7
+    }
+
+    text.email {
+	   font-size: 20px;
+    }
+
+    text.instructions {
+	   font-size: 16px;
+    }
+
+    g.context g.brush rect.background {
+	   fill: rgba(0,0,0,.1);
+    }
+
+    g.context g.axis path {
+	   stroke-opacity: 0;
+    }
+
+    g.context g.axis line {
+	   stroke-opacity: .1;
+    }
+
+    g.area path.chart_to {
+	   fill: #08324C;
+    }
+
+    g.area path.chart_from {
+	   fill: #CB1414;
+    }
+
+    svg {
+        font-family: 'Lato', Arial, serif;
+        font-size: 10px;
+        font-weight: 700;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+    }
+
+    #violin-container {
+        width: 900px;
+        height: 500px;
+        margin: 0 auto 50px auto;
+        background: rgba(255,255,255,0.5);
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+        padding: 10px 30px;
+        overflow:scroll;
+    }
+
+    #title {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #tooltip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255,255,255,0.8);
+        padding: 5;
+        border: solid 1px black;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s
+    }
+
+    .subtitle {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .countryList {
+        list-style: none;
+        padding: 10px;
+        float: left
+    }
+
+    .legend { list-style: none; }
+    .legend li { float: left; margin-right: 10px; }
+    .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+    .legend .receive { background-color: #CB1414; }
+    .legend .reply { background-color: #08324C; }
+
+    .axis path, .axis line {
+        fill: none;
+        stroke: #aaa;
+        shape-rendering: crispEdges;
+    }
+
+    .brush .extent {
+        stroke: #f09f8c;
+        fill-opacity: .125;
+        shape-rendering: crispEdges;
+    }
+
+    g.context rect.background{
+        fill: rgb(200,200,255);
+        visibility: visible !important;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: rgba(0, 0, 0, 0.1);
+        shape-rendering: crispEdges;
+    }
+
+    .axisLine {
+        fill: none;
+        shape-rendering: crispEdges;
+        stroke: rgba(0, 0, 0, 0.5);
+        stroke-width: 2px;
+    }
+
+    .dot {
+        fill-opacity: 1;
+    }
+
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+    }
+
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+
+    .d3-tip.n:after {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
+
+    .domain {
+        fill: none;
+        stroke: #000
+    }
+
+    .tick {
+        font-size:12
+    }
+
+    .tick line {
+        stroke: #ccc;
+    }
+
+</style>
