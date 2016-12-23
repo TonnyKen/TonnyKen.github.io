@@ -1,6 +1,6 @@
 
         var scatterWidth = 1110;
-        var scatterHeight = 850;
+        var scatterHeight = 650;
         var scatterMargin = {top:20, left:150, right:170, bottom:40};
         var scatterInnerHeight = scatterHeight - scatterMargin.top - scatterMargin.bottom;
         var scatterInnerWidth = scatterWidth - scatterMargin.left - scatterMargin.right;
